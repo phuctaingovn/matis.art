@@ -1,0 +1,276 @@
+/* Hiệu ứng di chuyển nhẹ (sway) cho class ani4 */
+@keyframes sway-scale-fade-ani4 {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px) scale(1.1);
+    opacity: 0.6;  /* làm mờ xuống 60% */
+  }
+}
+.ani4 {
+  animation: sway-scale-fade-ani4 4s ease-in-out infinite;
+}
+
+/* Hiệu ứng nhấp nháy hoặc phóng to nhỏ cho class ani5 */
+@keyframes sway-scale-fade-ani5 {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(7px) scale(1.1);
+    opacity: 0.6;  /* làm mờ xuống 60% */
+  }
+}
+.ani5 {
+  animation: sway-scale-fade-ani5 5s ease-in-out infinite;
+}
+
+/* Hiệu ứng nhấp nháy hoặc phóng to nhỏ cho class ani6 */
+@keyframes sway-scale-fade-ani6 {
+  0%, 100% {
+    transform: translateY(10px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(-25px) scale(1.2);
+    opacity: 0.8;  /* làm mờ xuống 60% */
+  }
+}
+.ani6 {
+  animation: sway-scale-fade-ani6 6s ease-in-out infinite;
+}
+
+/* Hiệu ứng nhấp nháy hoặc phóng to nhỏ cho class ani7 */
+@keyframes sway-scale-fade-ani7 {
+  0%, 100% {
+    transform: translateY(-10px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(-25px) scale(1.2);
+    opacity: 0.8;  /* làm mờ xuống 60% */
+  }
+}
+.ani7 {
+  animation: sway-scale-fade-ani7 7s ease-in-out infinite;
+}
+
+/* Hiệu ứng nhấp nháy hoặc phóng to nhỏ cho class ani8 */
+@keyframes sway-scale-fade-ani8 {
+  0%, 100% {
+    transform: translateY(5px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(32px) scale(1.2);
+    opacity: 0.8;  /* làm mờ xuống 60% */
+  }
+}
+.ani8 {
+  animation: sway-scale-fade-ani8 7.5s ease-in-out infinite;
+}
+
+/* Hiệu ứng nhấp nháy hoặc phóng to nhỏ cho class ani9 */
+@keyframes sway-scale-fade-ani9 {
+  0%, 100% {
+    transform: translateY(-10px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(30px) scale(1.2);
+    opacity: 0.8;  /* làm mờ xuống 60% */
+  }
+}
+.ani9 {
+  animation: sway-scale-fade-ani9 8.5s ease-in-out infinite;
+}
+
+.img-star {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none; /* tránh ảnh hưởng khi nhấp chuột */
+  user-select: none;
+}
+
+.star-1 {
+  top: 10%;
+  left: 10%;
+  width: 30px;
+  height: 30px;
+}
+
+.star-2 {
+  top: 95%;
+  left: 15%;
+  width: 25px;
+  height: 25px;
+}
+
+.star-3 {
+  top: 27%;
+  left: 87%;
+  width: 20px;
+  height: 20px;
+}
+
+.star-4 {
+  top: 90%;
+  left: 82%;
+  width: 30px;
+  height: 30px;
+}
+
+
+.star-8 {
+  top: 17%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+}
+
+.star-9 {
+  top: 15%;
+  left: 17%;
+  width: 25px;
+  height: 25px;
+}
+
+.star-10 {
+  top: 85%;
+  left: 85%;
+  width: 50px;
+  height: 50px;
+}
+
+.star-11 {
+  top: 80%;
+  left: 80%;
+  width: 30px;
+  height: 30px;
+}
+
+.tf-section.tf-about {
+  position: relative;
+  overflow: hidden; /* để ẩn phần vượt ra ngoài */
+}
+
+.background-gradient {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 100% 45%, rgba(255, 235, 87, 0.1) 0%, rgba(255, 235, 87, 0) 20%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-gradient-2 {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 0% 90%, rgba(123, 219, 66, 0.1) 0%, rgba(255, 235, 87, 0) 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-gradient-3 {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 0% 0%, rgba(69, 187, 0, 0.1) 0%, rgba(255, 235, 87, 0) 30%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-gradient-4 {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 0% 50%, rgba(69, 187, 0, 0.1) 0%, rgba(255, 235, 87, 0) 20%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-gradient-5 {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(circle at 0% 50%, rgba(69, 187, 0, 0.1) 0%, rgba(255, 235, 87, 0) 20%),
+    radial-gradient(circle at 100% 50%, rgba(113, 191, 73, 0.1) 0%, rgba(255, 235, 87, 0) 20%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-gradient-6 {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 60%, rgba(69, 187, 0, 0.2) 0%, rgba(255, 235, 87, 0) 25%),
+    radial-gradient(circle at 90% 20%, rgba(146, 191, 73, 0.2) 0%, rgba(255, 235, 87, 0) 25%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tf-section.tf-about > .tf-container {
+  position: relative;
+  z-index: 1; /* đảm bảo nội dung nằm trên background */
+}
+
+.watching-text {
+  margin-top: 30px;
+  font-family: 'Goldman', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.char.thanks {
+  color: #2aa94a;
+}
+
+.char.watching {
+  color: #21e786;
+}
+
+.char.o::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveDot 6s ease-in-out infinite;
+}
+
+@keyframes moveDot {
+  0% {
+    transform: translate(-50%, -50%); /* center */
+  }
+  12.5% {
+    transform: translate(calc(-50% - 5px), calc(-50% - 5px)); /* top-left */
+  }
+  25% {
+    transform: translate(calc(-50% + 5px), calc(-50% - 5px)); /* top-right */
+  }
+  37.5% {
+    transform: translate(calc(-50% - 5px), calc(-50% + 6px)); /* bottom-left */
+  }
+  43.75% {
+    transform: translate(-50%, -50%); /* back to center */
+  }
+  100% {
+    transform: translate(-50%, -50%); /* stay at center for ~4s */
+  }
+}

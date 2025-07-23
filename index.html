@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi-VN" lang="vi-VN">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>MATIS_ART creative studio</title>
+
+    <meta name="MATIS_ART" content="https://www.facebook.com/phuctai2907">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animationtest.css">
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+
+    <!-- Trường thông tin liên hệ (sau này sẽ cần xóa đi để bảo mật thông tin)  -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script>
+        (function () {
+        emailjs.init("mv4YHMqYeaoRg87fk"); // Public Key của bạn
+        })();
+    </script>
+    <!-- end  -->
+</head>
+
+<body class="body header-fixed counter-scroll home-1"></body>
+    <!-- preloade -->
+    <div class="preload-2 preload-container-2" id="preload">
+        <video class="preload-video" id="preloadVideo" autoplay muted>
+            <source src="assets/video-intro/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper" class="wrapper-style">
+        <div id="page" class="clearfix">
+            <header class="header">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner">                                 
+                                <div id="site-logo" class="clearfix">
+                                    <div id="site-logo-inner">
+                                        <a href="index.html" rel="home" class="main-logo">
+                                            <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-center">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item current-menu-item">
+                                                <a href="index.html">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="Introduce.html">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="portfolio.html">PORTFOLIO</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="publications.html">Ấn phẩm truyền thông</a></li>
+                                                    <li class="menu-item"><a href="packaging.html">Thiết kế bao bì</a></li>
+                                                    <li class="menu-item"><a href="painting.html">Digital painting</a></li>
+                                                    <li class="menu-item"><a href="social.html">Truyền thông xã hội</a></li>
+                                                    <li class="menu-item"><a href="photography.html">Nhiếp ảnh</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Video/Motion</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Nhận diện thương hiệu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="blog.html">S.TIN TỨC</a>                                        
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html">LIÊN HỆ</a>                                        
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                </div>
+                                <div class="header-right">
+                                    <a href="#" onclick="switchTheme()" class="mode-switch"><img id="img-mode" src="assets/images/icon/sun.png" alt="Image"></a>
+                                    <a href="https://zalo.me/0862132907" class="tf-button rounded-ends  zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO</span></a>
+                                    <a href="https://www.facebook.com/phuctai2907" class="tf-button rounded-ends connect" target="_blank"><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+                                </div>
+                                <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+<!-- /trang bìa đầu tiêntiên -->
+            <section class="bookcover">
+                <div class="bookcover-1 text-left parallax" data-stellar-background-ratio="0.3">
+                    <div class="inner rel-1">
+                        <div class="container">
+                            <h2 class="sub-heading_2 wow fadeInUp" data-wow-delay="1.2s">XIN CHÀO! CHÚNG TÔI LÀ</h2>
+                            <h1 class="heading mb0 wow fadeInUp" data-wow-delay="1.4s">
+                                <span class="animationtext clip">
+                                    <span class="cd-words-wrapper">
+                                        <span class="item-text is-visible">MATIS_ART</span>
+                                        <span class="item-text is-hidden">THE CREATORS</span>
+                                    </span>                                            
+                                </span>
+                            </h1>
+                            <div class="row sub-bookcover">
+                                <div class="wow fadeInUp" data-wow-delay="1.6s">
+                                    <p>Là những Gen Z với nguồn năng lượng xanh tuổi trẻ, khát khao học hỏi và cống hiến mỗi ngày – MATIS_ART Creative Studio cam kết mang đến những giải pháp sáng tạo thực tế, tạo ra giá trị khác biệt và bền vững trong từng dự án.</p>
+                                </div>
+                            </div>
+                            <div class="video__area wow fadeInUp" data-wow-delay="1.8s">
+                                <img src="assets/images/icon/bn-arrow.svg" class="vid__arrow" alt="img">
+                                <a href="#" class="video__80 video-btn" data-type="video">
+                                <img src="assets/images/icon/play-fill.svg" class="play_icon" alt="img">
+                                </a>
+                                <span class="proces">About Us</span>
+                            </div>
+                            <!-- Popup Video -->
+                            <div class="video-popup" id="videoPopup" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+                                <div class="video-container" style="position:relative; width:90%; max-width:1000px;">
+                                    <div class="close-btn" onclick="VideoPopup.closePopup()" style="position:absolute; top:8px; right:12px; cursor:pointer; font-size:24px; color:#fff;">×</div>
+                                    <!-- Thay iframe bằng video -->
+                                    <video id="hostVideo" controls preload="metadata" style="width:100%; height:auto; display:block; border-radius:8px;">
+                                        <source src="" type="video/mp4">
+                                            Trình duyệt của bạn không hỗ trợ thẻ video.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry-line"></div>
+                </div>
+            </section>
+
+            <section class="logo-slider">          
+                <div class="logo-slider-wrap">
+                    <div class="logo-slider-inner">
+                        <h3>GRAPHIC DESIGN</h3>
+                        <h3>BRAND IDENTITY DESIGN</h3>
+                        <h3>PACKAGING DESIGN</h3>
+                        <h3>LOGO & KEY VISUAL</h3>
+                        <h3>EVENT PRODUCTION</h3>
+                        <h3>PRODUCT PHOTOGRAPHY</h3>
+                        <h3>CAMERAMAN EVENT</h3>
+                        <h3>MOTION GRAPHICS</h3>
+                        <h3>EVENT PHOTOGRAPHY</h3>
+                        <h3>UX/UI DESIGN</h3>
+                    </div>
+                    <div class="logo-slider-inner style-2">
+                        <h3>FRONT-END DEVELOPER</h3>
+                        <h3>EVENT DESIGN AND PRODUCTION</h3>
+                        <h3>EVENT PHOTOJOURNALISM</h3>
+                        <h3>VIDEO EDITOR</h3>
+                        <h3>ELECTRICIAN</h3>
+                        <h3>DRONE PILOT</h3>
+                        <h3>WORTHLESS PERSON</h3>
+                        <h3>SERVICE</h3>
+                        <h3>OVERTHINKING</h3>
+                        <h3>CARROT_XANH</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-section tf-about" style="position: relative; overflow: hidden;">
+                <div class="tf-container">
+                    <div class="row ">   
+                        <div class="col-md-12 ">
+                            <div class="icon">
+                                <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_f_2337_5328)">
+                                    <path d="M88.0594 196L88.0594 142.485L50.2119 180.333L27.6674 157.788L65.5149 119.941L12 119.941L12 88.0594L65.5149 88.0594L27.6674 50.2119L50.2119 27.6673L88.0594 65.5148L88.0594 12L119.941 12L119.941 65.5149L157.788 27.6673L180.333 50.2119L142.485 88.0594L196 88.0594L196 119.941L142.485 119.941L180.333 157.788L157.788 180.333L119.941 142.485L119.941 196L88.0594 196Z" fill="url(#paint0_linear_2337_5328)"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_f_2337_5328" x="0" y="0" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_2337_5328"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_2337_5328" x1="196" y1="104" x2="12" y2="104" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="var(--primary-color35)"/>
+                                    <stop offset="1" stop-color="var(--primary-color35)" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="icon-2">
+                            <svg width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_f_2337_5282)">
+                                <path d="M234.678 38.4808L198.329 110.138L274.714 85.1672L289.589 130.668L213.203 155.638L284.86 191.988L263.205 234.677L191.548 198.328L216.518 274.713L171.018 289.588L146.047 213.202L109.698 284.859L67.0084 263.204L103.358 191.547L26.9721 216.517L12.0979 171.017L88.4837 146.046L16.8268 109.697L38.4818 67.0074L110.139 103.357L85.1682 26.9711L130.669 12.0969L155.639 88.4827L191.989 16.8258L234.678 38.4808Z" fill="url(#paint0_linear_2337_5282)"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_f_2337_5282" x="0.0976562" y="0.0966797" width="301.49" height="301.491" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_2337_5282"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_2337_5282" x1="27.6543" y1="88.352" x2="274.032" y2="213.333" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="var(--primary-color35)"/>
+                                <stop offset="1" stop-color="var(--primary-color35)" stop-opacity="0"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                            </div>
+
+                            <div class="centered-title wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="heading">LỜI NÓI ĐẦU</h2>
+                                <p class="chapter-content">Theo đuổi nghệ thuật, chúng tôi không ngừng sáng tạo, cống hiến và lan tỏa những giá trị tốt đẹp.
+                                    <br>Chúng tôi hiểu rằng, thời gian là vô cùng quý giá và sự ghé thăm của bạn nơi này chính là động lực khiến chúng tôi không ngừng cố gắng và học hỏi để mang đến những sản phẩm tuyệt vời hơn sau này.</p>
+                            </div>
+
+                            <div class="counter-wrap wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="tf-counter ">
+                                    <h6>Lượt truy cập</h6>
+                                    <div class="content">
+                                        <span id="visit-counter" class="counter-number">0</span>+
+                                    </div>
+                                </div>  
+                                <div class="tf-counter wow fadeInUp" data-wow-delay="0.3s">
+                                    <h6>Đang truy cập</h6>
+                                    <div class="content">
+                                        <span id="online-counter" class="counter-number">0</span>+
+                                    </div>
+                                </div>  
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-section tf-team-detail" style="position: relative; overflow: hidden;">
+                <div class="background-gradient"></div>
+                <div class="tf-container">
+                    <div class="row ">   
+                        <div class="col-md-6">
+                            <img src="assets/images/slider/slider-8.png" alt="Image" class="img-star star-8 ani4">
+                            <img src="assets/images/slider/slider-9.png" alt="Image" class="img-star star-9 ani5">
+                            <img src="assets/images/slider/slider-10.png" alt="Image" class="img-star star-10 ani4">
+                            <img src="assets/images/slider/slider-11.png" alt="Image" class="img-star star-11 ani5">
+                            <div class="swiper-container team-details wow fadeInLeft ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">
+                                            <picture>
+                                                <source media="(max-width: 530px)" srcset="assets/images/team/team-details.png">
+                                                <source media="(max-width: 992px)" srcset="assets/images/team/team-details-mb.png">
+                                                <img class="rounded-corners" src="assets/images/team/team-details.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-detail wow fadeInRight">
+                                <h7 class="position">CREATIVE STUDIO</h7>
+                                <h2 class="name">MATIS_ART</h2>
+                                <ul class="post-info">
+                                    <li><a>NGÔ PHÚC TÀI</a></li>
+                                    <li><a>EST. 2022</a></li>
+                                    <li><a>W.DEV</a></li>
+                                </ul>
+                                <h3 class="title">XIN CHÀO!</h3>
+                                <p class="description"><strong>MATIS ART</strong> là một <strong>Studio</strong> sáng tạo trẻ đầy năng lượng, cung cấp giải pháp thiết kế marketing, 
+                                    quay-chụp và edit video cho các sự kiện, thương hiệu và doanh nghiệp muốn tạo dấu ấn khác biệt. Kết hợp tư duy thị giác hiện đại với kỹ thuật sản xuất nội dung chuyên nghiệp, mang 
+                                    đến những sản phẩm truyền thông trực quan, cảm xúc và đúng mục tiêu chiến lược.
+                                </p>
+                                <p class="description">
+                                        Từ nhận diện thương hiệu, ấn phẩm quảng cáo đến TVC, video viral và nội dung social – mỗi dự án tại Carrot Xanh đều được thực hiện với sự chỉn chu, sáng tạo 
+                                        và tinh thần lắng nghe, học hỏi không ngừng. Chúng tôi tin rằng, nội dung tốt là nội dung có hồn – và đó cũng là điều chúng tôi luôn theo đuổi trong từng khung hình, từng thiết kế.</p>
+                                <h3 class="title">Liên hệ</h3>
+                                <div class="contact-infor">
+                                    <div class="contact-infor-box">
+                                        <img class="icon" src="assets/images/svg/email-2.svg" alt="Email Icon">
+                                        <a href="mailto:phuctaingovn@gmail.com">matisart.des</a>
+                                    </div>
+                                    <div class="contact-infor-box">
+                                        <img class="icon" src="assets/images/svg/phone-2.svg" alt="Phone Icon">
+                                        <a href="tel:0862132907">0862.132.907</a>
+                                    </div>
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="portfolio.html" class="rounded-ends tf-button wow fadeInUp">VIEW OUR PROJECTS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-section section-work" style="position: relative; overflow: hidden;">
+                <div class="background-gradient-2"></div>
+                    <div class="tf-container">
+                        <div class="row justify-content-center">   
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="image" style="max-width: 100px; margin-left: 0;">
+                                        <img id="work-1" src="assets/images/svg/work-1.svg" alt="Image">
+                                    </div>
+                                    <h6 class="title">PACKAGING DESIGN</h6>
+                                    <p class="content" style="text-align: justify;">Thiết kế các sản phẩm Tem, nhãn, mác, bao bì sản phẩm cấp 1, cấp 2, cấp 3... với đa dạng kích thước và mặt hàng.</p>
+                                </div>
+                            </div>   
+                            <div class="col-xl-4 col-lg-6 col-md-6 ">
+                            <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="image" style="max-width: 100px; margin-left: 0;">
+                                    <img id="work-2" src="assets/images/svg/work-2.svg" alt="Image">
+                                </div>
+                                <h6 class="title">SOCIAL MEDIA</h6>
+                                <p class="content" style="text-align: justify;">Thực hiện các thiết kế truyền thông đa phương tiện, kết nối và quảng bá giá trị của doanh nghiệp và khách hàng cá nhân.</p>
+                            </div>
+                        </div>   
+                        <div class="col-xl-4 col-lg-6 col-md-6 ">
+                            <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="image" style="max-width: 100px; margin-left: 0;">
+                                    <img id="work-3" src="assets/images/svg/work-3.svg" alt="Image">
+                                </div>
+                                <h6 class="title">EDITER VIDEO/ MOTION GRAPHIC</h6>
+                                <p class="content" style="text-align: justify;">Biên tập, Chỉnh sửa, edit video - motion tạo ra những câu chuyện hấp dẫn và truyền tải thông điệp từ khách hàng tới người xem.</p>
+                            </div>
+                        </div>   
+                        <div class="col-xl-4 col-lg-6 col-md-6 ">
+                            <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="image" style="max-width: 100px; margin-left: 0;">
+                                    <img id="work-4" src="assets/images/svg/work-4.svg" alt="Image">
+                                </div>
+                                <h6 class="title">MEDIA/PHOTOGRAPHY</h6>
+                                <p class="content" style="text-align: justify;">Quay, chụp, cắt, dựng, xử lý hậu kỳ hình ảnh trong nhiều lĩnh vực và concept khác nhau tùy theo nhu cầu của khách hàng.</p>
+                            </div>
+                        </div>   
+                        <div class="col-xl-4 col-lg-6 col-md-6 ">
+                            <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="image" style="max-width: 100px; margin-left: 0;">
+                                    <img id="work-5" src="assets/images/svg/work-5.svg" alt="Image">
+                                </div>
+                                <h6 class="title">3D DIMENTION</h6>
+                                <p class="content" style="text-align: justify;">Dựng lên các thiết kế 3D, cho khách hàng cái nhìn tổng quan và thử nghiệm về sản phẩm trước khi sản xuất thực tế.</p>
+                            </div>
+                        </div> 
+                        <div class="col-xl-4 col-lg-6 col-md-6 ">
+                            <div class="rounded-inforgraphic tf-work wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="image" style="max-width: 100px; margin-left: 0;">
+                                    <img id="work-6" src="assets/images/svg/work-6.svg" alt="Image">
+                                </div>
+                                <h6 class="title">UX/UI - PROGRAMMING</h6>
+                                <p class="content" style="text-align: justify;">Thiết kế giao diện, vận hành hoạt động Website giúp doanh nghiệp giới thiệu và quảng bá sản phẩm, nội dung đến khách hàng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner-style-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="tf-container">
+                    <div class="row-base row col-md-12">
+                        <div class="banner-quote">
+                            <div class="banner-heading">
+                                <h2 class="banner-title">"A good design is worth a thousand words!".</h2>
+                            </div>
+                            <div class="banner-button">
+                                <a href="Introduce.html" class="rounded-ends tf-button style-2 wow fadeInUp">ĐÔI NÉT VỀ CHÚNG TÔI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="video" class="masked text-center image-theme-section" data-stellar-background-ratio="0.4">
+                <div class="row-base row">
+                    <div class="section-body-x7">
+                        <div class="text-center col-md-8 col-md-offset-2">
+                            <div class="delimiter wow fadeInDown">
+                                <img style="max-width: 50px;" src="assets/images/svg/quotation.svg"  alt="delimiter">
+                            </div>
+                            <div class="wow fadeInDown section-body-x2">
+                                <p class="word-saying">“Thiết kế không chỉ là việc tạo hình ảnh, mà là sự kết hợp giữa ý tưởng, sáng tạo và truyền tải thông điệp. Người thiết kế là người truyền cảm xúc, thay đổi và tô điểm cho một thế giới tươi đẹp hơn. Với tâm hồn nghệ sĩ, chúng ta định hình cuộc sống qua từng dấu ấn sáng tạo.”</p>
+                            </div>
+                            <div class="wow fadeInUp section-body-x2">
+                                <p class="video-section-entry word-saying"><strong>NGÔ PHÚC TÀI</strong><br>- Graphic Designer -</p>
+                            </div>
+                            <div class="section-body-x7"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="my-key-point"></div>
+            <section class="statistic bgc-light text-center tf-section tf-about-2" style="position: relative; overflow: hidden;">
+                <div class="background-gradient-3"></div>
+                <div class="tf-container">
+                    <div class="row ">   
+                        <div class="col-md-12 ">
+                            <div class="icon">
+                                <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_f_2337_5328)">
+                                        <path d="M88.0594 196L88.0594 142.485L50.2119 180.333L27.6674 157.788L65.5149 119.941L12 119.941L12 88.0594L65.5149 88.0594L27.6674 50.2119L50.2119 27.6673L88.0594 65.5148L88.0594 12L119.941 12L119.941 65.5149L157.788 27.6673L180.333 50.2119L142.485 88.0594L196 88.0594L196 119.941L142.485 119.941L180.333 157.788L157.788 180.333L119.941 142.485L119.941 196L88.0594 196Z" fill="url(#paint0_linear_2337_5328)"/>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_f_2337_5328" x="0" y="0" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                            <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_2337_5328"/>
+                                        </filter>
+                                        <linearGradient id="paint0_linear_2337_5328" x1="196" y1="104" x2="12" y2="104" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="var(--primary-color35)"/>
+                                            <stop offset="1" stop-color="var(--primary-color35)" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="icon-2">
+                                <svg width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_f_2337_5282)">
+                                        <path d="M234.678 38.4808L198.329 110.138L274.714 85.1672L289.589 130.668L213.203 155.638L284.86 191.988L263.205 234.677L191.548 198.328L216.518 274.713L171.018 289.588L146.047 213.202L109.698 284.859L67.0084 263.204L103.358 191.547L26.9721 216.517L12.0979 171.017L88.4837 146.046L16.8268 109.697L38.4818 67.0074L110.139 103.357L85.1682 26.9711L130.669 12.0969L155.639 88.4827L191.989 16.8258L234.678 38.4808Z" fill="url(#paint0_linear_2337_5282)"/>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_f_2337_5282" x="0.0976562" y="0.0966797" width="301.49" height="301.491" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                            <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_2337_5282"/>
+                                        </filter>
+                                            <linearGradient id="paint0_linear_2337_5282" x1="27.6543" y1="88.352" x2="274.032" y2="213.333" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="var(--primary-color35)"/>
+                                            <stop offset="1" stop-color="var(--primary-color35)" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row-base row wow fadeInUp">
+                                <div class="col-statistic col-base col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="inner">
+                                        <div class="statistic-number">48</div>
+                                        <h9>Khách hàng</h9>
+                                    </div>
+                                </div>
+                                <div class="col-statistic col-base col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="inner">
+                                        <div class="statistic-number">133</div>
+                                        <h9>Dự án</h9>
+                                    </div>
+                                </div>
+                                <div class="col-statistic col-base col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="inner">
+                                        <div class="statistic-number"> 78</div>
+                                        <h9>Đánh giá</h9>
+                                    </div>
+                                </div>
+                                <div class="col-statistic col-base col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="inner">
+                                        <div class="statistic-number-2">4</div>
+                                        <h9>Hoạt động</h9>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="showcase text-center">
+                <div class="col-md-12">
+                    <div class="centered-title wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="heading"><span>TRIẾT LÝ</span> HOẠT ĐỘNG</h2>
+                        <p class="chapter-content">Với đội ngũ thiết kế trẻ và sáng tạo, luôn đặt hết tâm huyết vào từng sản phẩm của mình. Chúng tôi tin rằng sự đam mê, quan sát và lắng nghe là chìa khóa để tạo ra những sản phẩm độc đáo và ấn tượng.</p>
+                    </div>
+                </div>
+                <ul class="filter">
+                    <li class="active" data-filter="*"><a href="">ALL</a></li>
+                    <li data-filter=".digital-art"><a href="">DIGITAL ART</a></li>
+                    <li data-filter=".packaging"><a href="">PACKAGING</a></li>
+                    <li data-filter=".events"><a href="">EVENTS</a></li>
+                    <li data-filter=".poster"><a href="">POSSTER</a></li>
+                </ul>
+                <div class="js-iso">
+                    <div class="grid-sizer">
+                    </div>
+                    <div class="digital-art col-showcase w2 js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/1-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">Digital Art, painting work
+                                    </div>
+                                    <h3 class="showcase-title">TEM BƯU CHÍNH</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="digital-art col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/2-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">Digital Art, Painting work
+                                    </div>
+                                    <h3 class="showcase-title">TRUYỆN TRANH</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="packaging col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/3-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">PRODUCT, PACKAGING DESIGN
+                                    </div>
+                                    <h3 class="showcase-title">BAO BÌ SẢN PHẨM</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="packaging col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/4-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">PRODUCT, PACKAGING DESIGN
+                                    </div>
+                                    <h3 class="showcase-title">BAO BÌ SẢN PHẨM</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="events col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/5-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">DESIGN, ORGANIZATION
+                                    </div>
+                                    <h3 class="showcase-title">TỔ CHỨC SỰ KIỆN</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="events col-showcase w2 js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/6-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">DESIGN, ORGANIZATION
+                                    </div>
+                                    <h3 class="showcase-title">TỔ CHỨC SỰ KIỆN</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="poster col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/7-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">Garphic Design, Photoshop
+                                    </div>
+                                    <h3 class="showcase-title">POSTER - BANNER</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="poster col-showcase js-iso-item">
+                        <figure>
+                            <div class="image-holder"><img alt="" src="assets/images/portfolio/thum-index/8-thumb.jpg">
+                            </div>
+                            <figcaption class="figcaption-gradient">
+                                <div class="showcase-lead">
+                                    <div class="showcase-category">Graphic Designer, Photoshop
+                                    </div>
+                                    <h3 class="showcase-title">POSTER - BANNER</h3>
+                                    <div class="showcase-cntrls">
+                                        <a class="icon-round icon-round-medium heart-button"><i class="far fa-heart"></i></a>
+                                        <a class="icon-round icon-round-medium" onclick="copyLink('https://www.carrotxanh.com')"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-12 section-body-x2">
+                    <div class="tf-pagination">
+                        <a href="portfolio.html" class="rounded-ends tf-button style-2 wow fadeInUp">XEM THÊM CÁC DỰ ÁN KHÁC</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="clients" class="tf-testimonial-page wow fadeInUp" data-wow-duration="2s" style="position: relative; overflow: hidden;">
+                <div class="background-gradient-4"></div>
+                <div class="tf-container">
+                    <div class="row"> 
+                        <div class="col-md-12">
+                            <div class="centered-title wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="heading">NHẬN XÉT TỪ <span>KHÁCH HÀNG</span></h2>
+                                <p class="chapter-content">Đối với chúng tôi, những phản hồi tích cực từ khách hàng và những người xung quanh chính là nguồn năng lương to lớn để CARROT XANH không ngừng phát triển mỗi ngày.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="section-body section-body-x2">
+                <div class="clients-carousel  owl-carousel wow fadeInUp" data-wow-duration="2s">
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>"Book bên này làm bộ nhận diện. Mọi chi tiết từ màu sắc đến phông chữ đều được chăm chút kỹ lưỡng có đầu tư, thương hiệu cũng ấn tượng nổi bật hẳn so với đối thủ."</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                    <img src="assets/images/author/avt1.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Mr. Trần Hải Đăng</h5>
+                                    <h6>Marketer - HTC M.E.C</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>“Ảnh sản phẩm chụp tốt. Các góc chụp đẹp, ánh sáng tự nhiên và hậu kỳ màu sắc ổn làm nổi bật được sản phẩm. Đội ngũ chuyên nghiệp, đánh giá cao tinh thần.”</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                    <img src="assets/images/author/avt2.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Mrs.Trần Diệu Anh</h5>
+                                    <h6>CMO - SHE GLOBAL CO</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>“Video quảng cáo hay, Từ kịch bản đến cách dựng hình, tất cả đều chuyên nghiệp. Nhờ video này, lượt tương tác trên mạng xã hội tăng và có hiệu quả rõ rệt.”</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                    <img src="assets/images/author/avt3.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Mr. Đặng Trí Trung</h5>
+                                    <h6>CEO - AnTri travel</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>“Làm việc chuyên nghiệp và cởi mở. Thay đổi yêu cầu giữa chừng, vẫn nhanh chóng điều chỉnh mà không thái độ. Đánh giá đầu ra bộ thiết kế vừa đẹp, đúng ý.”</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                    <img src="assets/images/author/avt4.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Mr.Lê Bảo Long</h5>
+                                    <h6>Khách hàng cá nhân</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>“Book team Carrot_xanh chụp ảnh sự kiện công ty. Bắt khoảnh khắc rất khéo, hậu kỳ tự nhiên, không gượng ép. Khách mời xem ảnh đều thích.”</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                    <img src="assets/images/author/avt5.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Ms.Khánh Ly</h5>
+                                    <h6>Khách hàng cá nhân</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="tf-testimonial rounded-buton">
+                            <p>“TVC giới thiệu doanh nghiệp được team Carrot_xanh thực hiện rất ấn tượng. Nắng nóng 40 độ anh em vẫn rất chịu khó nhiệt tình, đánh giá cao chất lượng sản phẩm cuối cùng.”</p>
+                            <div class="author-tes">
+                                <div class="avt">
+                                <img src="assets/images/author/avt6.jpg" alt="images">
+                                </div>
+                                <div class="content">
+                                    <h5>Jenny huynh</h5>
+                                    <h6>Marketer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="tf-contact-2">
+                    <div class="tf-container">
+                        <div class="row justify-content-center wow fadeInUp" data-wow-duration="2s">
+                            <div class="col-xl-6 col-lg-8 col-md-9">
+                                <div class="centered-title section-body-bottom wow fadeInUp" data-wow-delay="0.2s">
+                                    <h2 class="centered-title heading">ĐỂ LẠI <span>LỜI NHẮN</span></h2>
+                                    <p class="chapter-content">Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ.<br>Chúng tôi luôn sẵn sàng giúp đỡ.</p>
+                                </div>
+                                <form method="post" id="contact-form" class="comment-form wow fadeInUp" data-wow-duration="2s" onsubmit="sendEmail(event)">
+                                    <div class="form-inner">
+                                        <fieldset class="name">
+                                            <input type="text" id="name" placeholder="Name" class="tb-my-input" name="from_name" required tabindex="2" aria-required="true" required="">
+                                        </fieldset>    
+                                        <fieldset class="phone">
+                                            <input type="tel" id="phone" placeholder="Phone Number" class="tb-my-input" name="phone" tabindex="2" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="email">
+                                            <input type="email" id="email" placeholder="Enter your email" class="tb-my-input" name="reply_to" required tabindex="2" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="message">
+                                            <textarea id="message" name="message" rows="4" required placeholder="Message" tabindex="4" aria-required="true" required=""></textarea>
+                                        </fieldset>
+                                        <fieldset style="display:none;">
+                                            <input type="text" name="date" id="date">
+                                        </fieldset>
+                                    </div>
+                                    <div class="btn-submit"><button class="tf-button style-2 rounded-ends" type="submit">GỬI TIN NHẮN</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="action-box">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action-box-inner">
+                                <h2 class="title">THAM GIA CỘNG ĐỒNG CỦA CHÚNG TÔI</h2>
+                                <p class="content">Cùng giao lưu, kết bạn, tìm kiếm cơ hội tuyển dụng và chia sẻ những tài nguyên giá trị.</p>
+                                <div class="group-btn">
+                                    <a href="comming-soon.html" class="tf-button rounded-buton connect" target="_blank"><i class="icon-facebook"></i><span>FANPAGE</span></a>
+                                    <a href="comming-soon.html" class="tf-button rounded-buton zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO GROUP</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="widget widget-infor">
+                                <div class="logo">
+                                    <img id="logo_footer" src="assets/images/logo/logo-footer.png" alt="Image">
+                                </div>
+                                <p class="content">Cảm ơn bạn đã dành một chút thời gian quý giá để ghé thăm nơi này!</p>
+                                <p class="contact_2">Thông tin liên hệ:</p>
+                                <div class="widget contact_2">
+                                    <div class="menu">
+                                        <ul >
+                                            <li><p class="contact_2">Hotline: <a href="tel:0862132907">0862132907</a></p></li>
+                                            <li><p class="contact_2">Email: <a href="mailto:phuctaingovn@gmail.com">phuctaingovn@gmail.com</a></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <div class="widget widget-menu">
+                                <div class="menu menu-1">
+                                    <h6 class="widget-title">THÔNG TIN</h6>
+                                    <ul >
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="Introduce.html">Giới thiệu</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu menu-2">
+                                    <h6 class="widget-title">S.TIN TỨC</h6>
+                                    <ul >
+                                        <li><a href="blog.html">News</a></li>
+                                        <li><a href="blog.html">Showcase</a></li>
+                                        <li><a href="blog.html">Font free</a></li>
+                                        <li><a href="blog.html">Resouces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="widget widget-subcribe">
+                                <h6 class="widget-title">ĐỂ LẠI EMAIL NẾU BẠN CẦN HỖ TRỢ</h6>
+                                <form id="subscribe-form" onsubmit="sendSubscribeEmail(event)">
+                                    <input type="email" placeholder="Email của bạn" required="" id="subscribe-email" name="reply_to" required>
+                                    <fieldset style="display:none;"><input type="text" name="send_date" id="subscribe-date"></fieldset>
+                                    <button class="tf-button" type="submit" id="subscribe-button">GỬI</button>
+                                </form>
+                                <div class="img2">
+                                    <img src="assets/images/iconcarrotxanh/camera-01.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <div class="copy-right col-base col-md-6">
+                                    <div class="widget contact_2">
+                                        <div class="menu">
+                                            <ul>
+                                                <li><p class="contact_2">@ 2023. All rights reserved. With Energy and Love from <a href="https://www.facebook.com/phuctai2907">❤ Phúc tài.</a></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="social-item ">
+                                    <li><a href="https://www.facebook.com/phuctai2907"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/84862132907"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@phuctaingovn"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/phuctaingovn/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://discord.gg/"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bottom -->
+    <a id="scroll-top"></a>
+    <!-- Cursor Effect Elements -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery2.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/textanimation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/switchmode.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/shortcodes.js"></script>
+    <script src="assets/js/mycode.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/interface.js"></script>
+    <script src="assets/css/Magnificpopup.css"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
+</body>
+
+</html>

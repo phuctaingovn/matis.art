@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>MATIS_ART | Contact me</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animationtest.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+
+    <!-- Trường thông tin liên hệ (sau này sẽ cần xóa đi để bảo mật thông tin)  -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script>
+        (function () {
+        emailjs.init("mv4YHMqYeaoRg87fk"); // Public Key của bạn
+        })();
+    </script>
+    <!-- end  -->
+</head>
+
+<body class="body header-fixed team-page">
+
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper" class="wrapper-style">
+        <div id="page" class="clearfix">
+            <header class="header">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner">                                 
+                                <div id="site-logo" class="clearfix">
+                                    <div id="site-logo-inner">
+                                        <a href="index.html" rel="home" class="main-logo">
+                                            <img id="logo_header" src="assets/images/logo/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-center">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item">
+                                                <a href="index.html">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="Introduce.html">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="portfolio.html">PORTFOLIO</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="publications.html">Ấn phẩm truyền thông</a></li>
+                                                    <li class="menu-item"><a href="packaging.html">Thiết kế bao bì</a></li>
+                                                    <li class="menu-item"><a href="painting.html">Digital painting</a></li>
+                                                    <li class="menu-item"><a href="social.html">Truyền thông xã hội</a></li>
+                                                    <li class="menu-item"><a href="photography.html">Nhiếp ảnh</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Video/Motion</a></li>
+                                                    <li class="menu-item"><a href="brandidentity.html">Nhận diện thương hiệu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="blog.html">S.TIN TỨC</a>                                        
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="contact.html">LIÊN HỆ</a>                                        
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                </div>
+                                <div class="header-right">
+                                    <a href="#" onclick="switchTheme()" class="mode-switch"><img id="img-mode" src="assets/images/icon/sun.png" alt="Image"></a>
+                                    <a href="https://zalo.me/0862132907" class="tf-button rounded-ends zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO</span></a>
+                                    <a href="https://www.facebook.com/phuctai2907" class="tf-button rounded-ends connect" target="_blank"><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+                                </div>
+                                <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="tf-page-title">    
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title-heading">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="index.html">HOME</a></li>
+                                <li>CONTACT US</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+            
+            <section class="tf-contact">
+                <div class="tf-container">
+                    <div class="row"> 
+                        <div class="col-md-12">
+                            <div class="tf-infor-wrap">
+                                <div class="tf-infor tf-contact-click rounded-inforgraphic" id="map-button">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/loaction.svg" alt="Image">
+                                    </div>
+                                    <h3 class="title">Location</h3>
+                                    <p class="sub-title">Sảnh R2, Royal City, Thanh Xuân, Hà Nội</p>
+                                </div>
+                                <div class="tf-infor tf-contact-click rounded-inforgraphic" id="email-button">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/email.svg" alt="Image">
+                                    </div>
+                                    <h3 class="title">Email</h3>
+                                    <p class="sub-title">phuctaingovn@gmail.com</p>
+                                </div>
+                                <div class="tf-infor tf-contact-click rounded-inforgraphic" id="call-button">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/phone.svg" alt="Image">
+                                    </div>
+                                    <h3 class="title">Phone</h3>
+                                    <p class="sub-title">0862132907</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tf-contact-2">
+                    <div class="tf-container">
+                        <div class="row justify-content-center wow fadeInUp" data-wow-duration="2s">
+                            <div class="col-xl-6 col-lg-8 col-md-9">
+                                <div class="centered-title section-body-bottom wow fadeInUp" data-wow-delay="0.2s">
+                                    <h2 class="centered-title heading">ĐỂ LẠI <span>LỜI NHẮN</span></h2>
+                                    <p class="chapter-content">Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ.<br>Chúng tôi luôn sẵn sàng giúp đỡ.</p>
+                                </div>
+                                <form method="post" id="contact-form" class="comment-form wow fadeInUp" data-wow-duration="2s" onsubmit="sendEmail(event)">
+                                    <div class="form-inner">
+                                        <fieldset class="name">
+                                            <input type="text" id="name" placeholder="Name" class="tb-my-input" name="from_name" required tabindex="2" aria-required="true" required="">
+                                        </fieldset>    
+                                        <fieldset class="phone">
+                                            <input type="tel" id="phone" placeholder="Phone Number" class="tb-my-input" name="phone" tabindex="2" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="email">
+                                            <input type="email" id="email" placeholder="Enter your email" class="tb-my-input" name="reply_to" required tabindex="2" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="message">
+                                            <textarea id="message" name="message" rows="4" required placeholder="Message" tabindex="4" aria-required="true" required=""></textarea>
+                                        </fieldset>
+                                        <fieldset style="display:none;">
+                                            <input type="text" name="date" id="date">
+                                        </fieldset>
+                                    </div>
+                                    <div class="btn-submit"><button class="tf-button style-2" type="submit">SEND MESSANGER</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="action-box">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action-box-inner">
+                                <h2 class="title">THAM GIA CỘNG ĐỒNG CỦA CHÚNG TÔI</h2>
+                                <p class="content">Cùng giao lưu, kết bạn, tìm kiếm cơ hội tuyển dụng và chia sẻ những tài nguyên giá trị.</p>
+                                <div class="group-btn">
+                                    <a href="comming-soon.html" class="tf-button rounded-buton connect" target="_blank"><i class="icon-facebook"></i><span>FANPAGE</span></a>
+                                    <a href="comming-soon.html" class="tf-button rounded-buton zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO GROUP</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="widget widget-infor">
+                                <div class="logo">
+                                    <img id="logo_footer" src="assets/images/logo/logo-footer.png" alt="Image">
+                                </div>
+                                <p class="content">Cảm ơn bạn đã dành một chút thời gian của mình để ghé thăm nơi này!</p>
+                                <p class="contact_2">Thông tin liên hệ:</p>
+                                <div class="widget contact_2">
+                                    <div class="menu">
+                                        <ul >
+                                            <li><p class="contact_2">Hotline: <a href="tel:0862132907">0862132907</a></p></li>
+                                            <li><p class="contact_2">Email: <a href="mailto:phuctaingovn@gmail.com">phuctaingovn@gmail.com</a></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <div class="widget widget-menu">
+                                <div class="menu menu-1">
+                                    <h6 class="widget-title">THÔNG TIN</h6>
+                                    <ul >
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="Introduce.html">Giới thiệu</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu menu-2">
+                                    <h6 class="widget-title">S.TIN TỨC</h6>
+                                    <ul >
+                                        <li><a href="blog.html">News</a></li>
+                                        <li><a href="blog.html">Showcase</a></li>
+                                        <li><a href="blog.html">Font free</a></li>
+                                        <li><a href="blog.html">Resouces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="widget widget-subcribe">
+                                <h6 class="widget-title">ĐỂ LẠI EMAIL NẾU BẠN CẦN HỖ TRỢ</h6>
+                                <form id="subscribe-form" onsubmit="sendSubscribeEmail(event)">
+                                    <input type="email" placeholder="Email của bạn" required="" id="subscribe-email" name="reply_to" required>
+                                    <fieldset style="display:none;"><input type="text" name="send_date" id="subscribe-date"></fieldset>
+                                    <button class="tf-button" type="submit" id="subscribe-button">GỬI</button>
+                                </form>
+                                <div class="img2">
+                                    <img src="assets/images/iconcarrotxanh/camera-01.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <div class="copy-right col-base col-md-6">
+                                    <div class="widget contact_2">
+                                        <div class="menu">
+                                            <ul>
+                                                <li><p class="contact_2">@ 2023. All rights reserved. With Energy and Love from <a href="https://www.facebook.com/phuctai2907">❤ Phúc Tài.</a></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="social-item ">
+                                    <li><a href="https://www.facebook.com/phuctai2907"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/84862132907"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@phuctaingovn"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/phuctaingovn/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://discord.gg/"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Bottom -->
+    <a id="scroll-top"></a>
+    <!-- Cursor Effect Elements -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery2.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/textanimation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/switchmode.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/shortcodes.js"></script>
+    <script src="assets/js/mycode.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/interface.js"></script>
+    <script src="assets/css/Magnificpopup.css"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
+</body>
+
+</html>

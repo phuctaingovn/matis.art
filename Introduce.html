@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>MATIS_ART | About me</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animationtest.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+
+    <!-- Trường thông tin liên hệ (sau này sẽ cần xóa đi để bảo mật thông tin)  -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script>
+        (function () {
+        emailjs.init("mv4YHMqYeaoRg87fk"); // Public Key của bạn
+        })();
+    </script>
+    <!-- end  -->
+</head>
+
+<body class="body header-fixed team-page">
+
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper" class="wrapper-style">
+        <div id="page" class="clearfix">
+            <header class="header">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner">                                 
+                                <div id="site-logo" class="clearfix">
+                                    <div id="site-logo-inner">
+                                        <a href="index.html" rel="home" class="main-logo">
+                                            <img id="logo_header" src="assets/images/logo/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-center">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item">
+                                                <a href="index.html">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="Introduce.html">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="portfolio.html">PORTFOLIO</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="publications.html">Ấn phẩm truyền thông</a></li>
+                                                    <li class="menu-item"><a href="packaging.html">Thiết kế bao bì</a></li>
+                                                    <li class="menu-item"><a href="painting.html">Digital painting</a></li>
+                                                    <li class="menu-item"><a href="social.html">Truyền thông xã hội</a></li>
+                                                    <li class="menu-item"><a href="photography.html">Nhiếp ảnh</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Video/Motion</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Nhận diện thương hiệu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="blog.html">S.TIN TỨC</a>                                        
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html">LIÊN HỆ</a>                                        
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                </div>
+                                <div class="header-right">
+                                    <a href="#" onclick="switchTheme()" class="mode-switch"><img id="img-mode" src="assets/images/icon/sun.png" alt="Image"></a>
+                                    <a href="https://zalo.me/0862132907" class="tf-button rounded-ends zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO</span></a>
+                                    <a href="https://www.facebook.com/phuctai2907" class="tf-button rounded-ends connect" target="_blank"><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+                                </div>
+                                <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="tf-page-title">    
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title-heading">ABOUT ME</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="index.html">HOME</a></li>
+                                <li>ABOUT ME</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+
+            <section class="tf-section tf-team-detail">
+                <div class="background-gradient"></div>
+                <div class="tf-container">
+                    <div class="row ">   
+                        <div class="col-md-6">
+                            <div class="swiper-container team-details ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">
+                                            <picture>
+                                                <source media="(max-width: 530px)" srcset="assets/images/team/me-details-1.jpg">
+                                                <!-- Hình ảnh thay thế khi màn hình nhỏ hơn 990px -->
+                                                <source media="(max-width: 992px)" srcset="assets/images/team/me-details-1-mb.jpg">
+                                                <!-- Hình ảnh mặc định (màn hình lớn hơn 990px) -->
+                                                <img class="rounded-corners" src="assets/images/team/me-details-1.jpg" alt="Image">
+                                            </picture>
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">
+                                            <img class="rounded-corners" src="assets/images/team/me-details-2.jpg" alt="Image">
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">
+                                            <img src="assets/images/team/me-details-3.jpg" alt="Image">
+                                        </div><!-- item-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content-detail">
+                                <h7 class="position">GRAPHIC DESIGNER</h7>
+                                <h2 class="name">N. PHÚC TÀI</h2>
+                                <ul class="post-info">
+                                    <li><a>NGÔ PHÚC TÀI</a></li>
+                                    <li><a>YOB. 2005</a></li>
+                                    <li><a>Nam</a></li>
+                                </ul>
+                                <h3 class="title">About</h3>
+                                <div class="text-description swiper-container team-details" data-wow-delay="0.2s">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slider-item">
+                                                <p class="description wow fadeInUp" data-wow-delay="0.2s">
+                                                    Với 4 năm kinh nghiệm trong vai trò một Graphic Designer, tôi tự tin mang đến những giải pháp sáng tạo, linh hoạt và đột phá cho mỗi dự án, mỗi sản phẩm. 
+                                                    Từ ý tưởng ban đầu đến sản phẩm hoàn thiện, tôi đảm bảo từng thiết kế không chỉ đạt tiêu chuẩn thẩm mỹ cao mà còn tối ưu về chất lượng và hiệu quả.
+                                                </p>
+                                                <p class="description wow fadeInUp" data-wow-delay="0.3s">
+                                                    Tốt nghiệp chuyên ngành Thiết kế đồ họa tại FPT POLYTECHNIC, sở hữu tư duy thiết kế sắc bén, chú trọng vào sáng tạo kết hợp tính ứng dụng thực tế để tạo ra sản
+                                                    phẩm chất lượng cao đảm bảo tính thẩm mỹ, hiệu quả và đáp ứng đúng nhu cầu của khách hàng. Tôi không ngừng học hỏi, lắng nghe phản hồi 
+                                                    để nâng cao kỹ năng và hoàn thiện sản phẩm.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider-item">
+                                                <p class="description">
+                                                    Với vai trò là một nhà thiết kế, tôi tự tin mang đến những giải pháp thiết kế sáng tạo, linh hoạt và đột phá cho các dự án thiết kế mà tôi tham gia. 
+                                                    4 năm kinh nghiệm trong ngành, tham gia nhiều dự án lớn, vừa và nhỏ, từ việc lên ý tưởng đến hoàn thiện sản phẩm cuối cùng, đảm bảo tính thẩm mỹ, 
+                                                    chất lượng và hiệu quả công việc.
+                                                </p>
+                                                <p class="description">
+                                                Tốt nghiệp chuyên ngành Mỹ thuật ứng dụng tại NUAE, sở hữu tư duy thiết kế sắc bén, chú trọng vào sự sáng tạo kết hợp với tính ứng dụng thực tế. 
+                                                Mỗi dự án tôi tham gia đều được nghiên cứu kỹ lưỡng, đảm bảo tính thẩm mỹ, hiệu quả và đáp ứng đúng nhu cầu của khách hàng. Với khả năng phân tích 
+                                                xu hướng thiết kế và linh hoạt... 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider-item">
+                                                <p class="description">
+                                                    ...điều chỉnh phong cách giúp tôi tạo ra những sản phẩm ấn tượng, phù hợp với mục tiêu cụ thể của từng dự án. 
+                                                    Tôi chú trọng và hướng tới việc kết hợp sự sáng tạo với tính ứng dụng thực tế, nhằm mang đến các thiết kế hiện đại, hấp dẫn và 
+                                                    phù hợp với mục tiêu của từng dự án.
+                                                </p>
+                                                <p class="description">
+                                                Với khả năng làm việc đội nhóm hiệu quả cũng như thích ứng hoạt động độc lập, luôn chủ động học hỏi và lắng nghe phản hồi để không ngừng 
+                                                hoàn thiện kỹ năng. Tôi có kế hoạch và mục tiêu theo đuổi dài hạn. Trở thành một Art Directer có khả năng quản lý, xây dựng đội nhóm, 
+                                                dẫn dắt, phát triển các sản phẩm thiết kế ấn tượng và đóng góp giá trị bền vững cho khách hàng cũng như cộng đồng sáng tạo.
+                                                </p>
+                                            </div><!-- item-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="social-item wow fadeInUp" data-wow-delay="0.4s">
+                                    <a href="https://drive.google.com/file/d/1l59aYHT_5kAkBaaJrnEKMzIokGoXk3P2/view?usp=sharing" class="rounded-ends tf-button wow fadeInUp" target="_blank" rel="noopener noreferrer">Xem trước CV của tôi</a>
+                                </ul>
+                            </div>
+                            <div class="group-btn wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="swiper-button-prev button-team-detail-prev"></div>
+                                <div class="swiper-button-next button-team-detail-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tf-section section-work">
+                <div class="background-gradient-2"></div>
+                <div class="tf-container">
+                    <div class="row">   
+                        <div class="col-md-12 ">
+                            <div class="centered-title  wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="heading"><span> KỸ NĂNG </span>CHUYÊN MÔN</h2>
+                                <p class="chapter-content">Tôi tin rằng tinh thần cầu tiến, học hỏi và nâng cao kỹ năng chuyên môn là nền tảng vững chắc giúp tôi tạo ra những giải pháp sáng tạo, sản phẩm chất lượng cao và giá trị bền vững trong từng dự án.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 ">
+                            <div class="Professional-skills rounded-inforgraphic wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="chart wow" data-percent="75" data-wow-delay="0.4s">
+                                    <div class="chart-icon"><img src="assets/icon/icon-skill/skill/1.png"></div>
+                                </div>
+                                <h6 class="title">DESIGN SOCIAL MEDIA</h6>
+                                <p class="content">GDN, Poster, Banner, Social post, Motion graphic, Animation...</p>
+                            </div>
+                        </div>   
+                        <div class="col-xl-3 col-lg-6 col-md-6 ">
+                            <div class="Professional-skills rounded-inforgraphic wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="chart wow" data-percent="60" data-wow-delay="0.6s">
+                                    <div class="chart-icon"><img src="assets/icon/icon-skill/skill/2.png"></div>
+                                </div>
+                                <h6 class="title">MEDIA/PHOTOGRAPHY</h6>
+                                <p class="content">Cameraman - Photographer/Editer, Drone/FPV copilot</p>
+                            </div>
+                        </div>   
+                        <div class="col-xl-3 col-lg-6 col-md-6 ">
+                            <div class="Professional-skills rounded-inforgraphic wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="chart wow" data-percent="50" data-wow-delay="0.8s">
+                                    <div class="chart-icon"><img src="assets/icon/icon-skill/skill/3.png"></div>
+                                </div>
+                                <h6 class="title">HAND DRAWING</h6>
+                                <p class="content">Conceptual Drawing, Sketching, Digital Painting, Illustration</p>
+                            </div>
+                        </div>    
+                        <div class="col-xl-3 col-lg-6 col-md-6 ">
+                            <div class="Professional-skills rounded-inforgraphic wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="chart wow" data-percent="40" data-wow-delay="1s">
+                                    <div class="chart-icon"><img src="assets/icon/icon-skill/skill/4.png"></div>
+                                </div>
+                                <h6 class="title">PROGRAMMING</h6>
+                                <p class="content">UI/UX design,<br>Front - end developer </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Loader -->       
+    <main class="main">
+    <!-- Features -->
+        <section id="specialization" class="specialization text-center mb60">
+            <div class="background-gradient"></div>
+            <div id="masthead"></div> 
+            <div class="container"> 
+                <section id="my-key-point-2"></section>
+                    <div class="row-advantage row">
+                        <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="inner">
+                                <div class="media-left"><img src="assets/icon/icon-skill/software/Ai.svg" alt="Adobe illustrator"></i></div>
+                                    <h6 class="media-right">Adobe illustrator</h6><h6 class="skill">96%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="95%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Ps.svg" alt="Adobe Photoshop"></i></div>
+                                    <h6 class="media-right">Adobe Photoshop</h6><h6 class="skill">94%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="93%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Ae.svg" alt="Adobe After effects"></i></div>
+                                    <h6 class="media-right">Adobe After effects</h6><h6 class="skill">81%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="80%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Pr.svg" alt="Adobe Premiere pro"></i></div>
+                                    <h6 class="media-right">Adobe Premiere pro</h6><h6 class="skill">76%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="75%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Id.svg" alt="Adobe InDesign"></i></div>
+                                    <h6 class="media-right">Adobe InDesign</h6><h6 class="skill">66%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="65%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2ss">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Dn.svg" alt="Adobe Dimention"></i></div>
+                                    <h6 class="media-right">Adobe Dimention</h6><h6 class="skill">56%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/An.svg" alt="Adobe Animate"></i></div>
+                                    <h6 class="media-right">Adobe Animate</h6><h6 class="skill">51%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div id="my-key-point-2" class="col-advantage col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="inner">
+                                    <div class="media-left"><img src="assets/icon/icon-skill/software/Vs.svg" alt="Visual Code"></i></div>
+                                    <h6 class="media-right">Visual Code</h6><h6 class="skill">45%</h6>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="45%"></div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-process">
+            <div class="container tf-roadmap">
+                <div class="col-md-12">
+                    <div class="centered-title mb60 wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="heading"><span> QUÁ TRÌNH </span>CÔNG TÁC</h2>
+                        <p class="sub-heading">Trên tất cả, tôi luôn trân trọng và cảm ơn những gì đã xảy ra trong quá khứ và cả hiện tại vì nó luôn là một phần quan trọng làm nên tôi của ngày hôm nay!</p>
+                    </div>
+                </div> 
+                <div class="roadmap">
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>02/2024 - 03/2025</h3>
+                            <li>Designer, PAPAZI., JSC</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p class="content-work">Thiết kế Fashion và tổ chức các sự kiện, ngày hội, hoạt động và phong trào của tập đoàn với quy mô vừa và lớn. Quay-chụp, cắt dựng video.</p>
+                            <ul class="sub-text">
+                                <li>_ Tên quốc tế: PAPAZI</li>
+                                <li>_ Địa chỉ: 308/5 Trần Phú, Phường Thành Công, TP. Buôn Ma Thuột, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>06/2023 - 02/2024</h3>
+                            <li>Designer, REPUTYZE ASIA LAYERS.VN, JSC</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p class="content-work">Xây dựng quy trình làm việc mới, đạt hiệu quả cao. Xây dựng quản lý các thành viên nhóm, giám sát và kiểm soát. Tạo ra những ý tưởng và thiết kế sáng tạo. Truyền cảm hứng và hướng dẫn các nhóm sáng tạo. </p>
+                            <ul class="sub-text">
+                                <li>_ Tên quốc tế: REPUTYZE ASIA.</li>
+                                <li>_ Địa chỉ: Phòng 3C Tòa nhà Aga, 72/24 Phan Đăng Lưu, Phường 5, Quận Phú Nhuận, TP.Hồ Chí Minh, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>01/2020 - 06/2023</h3>
+                            <li>Designer, GARENA, Senior Graphic Design</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p class="content-work">Nghiên cứu và phát triển hình ảnh sản phẩm của GARENA. Thiết kế sản phẩm, xây dựng các chiến dịch quảng cáo, thiết kế ấn phẩm truyền thông,...</p>
+                            <ul class="sub-text">
+                                <li>_ Tên quốc tế: GARENA.</li>
+                                <li>_ Địa chỉ: Tầng 6, Tòa nhà Capital Place, Số 29 Liễu Giai, Phường Ngọc Khách, Quận Ba Đình, Thành phố Hà Nội, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>01/2019 - 11/2020</h3>
+                            <li>Game Artist, Athena Studio</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p class="content-work">Học tập, trải nghiệm, phát triển và mở rộng kỹ năng cá nhân. Hợp tác thiết kế và làm việc với một số đơn vị. Đánh dấu những bước đầu tiên của Athena Studio.</p>
+                            <ul class="sub-text">
+                                <li>_ Tên quốc tế: ATHENA STUDIO.</li>
+                                <li>_ Địa chỉ: 40a Đ. Lam Sơn, Phường 2, Tân Bình, Hồ Chí Minh, Việt Nam.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>10/2016 - 11/2018</h3>
+                            <li>Designer, GAMELOFT, 2D Graphic Artist, LTD</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p style="text-indent: 2em;">Làm việc trong môi trường doanh nghiệp ở vị trí Chuyên viên thiết kế 2D concept, sau đó tham gia làm việc chặt chẽ với Producer, lập trình viên, và Lead Art để tạo ra những sản phẩm đồ họa chất lượng.</p>
+                            <ul class="sub-text">
+                                <li>_ Tên quốc tế: GAMELOFT. SAIGON STUDIO.</li>
+                                <li>_ Địa chỉ: Pax Sky, 26 Ung Văn Khiêm, P.25, Bình Thạnh, TP.Hồ Chí Minh, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="entry">
+                        <div class="title wow fadeInUp" data-wow-duration="1s">
+                            <h3>04/2015  - 07/2019</h3>
+                            <li>Intern, Chicilon Media Agency, LTD</li>
+                        </div>
+                        <div class="work-experience wow fadeInUp">
+                            <p style="text-indent: 2em;">Thực tập sinh, trải nhiệm làm việc trong môi trường của một Agency thiết kế chuyên nghiệp, học hỏi và phát triển nhiều kỹ năng, kinh nghiệm nền tảng chuyên ngành.</p>
+                            <ul class="sub-text">
+                                <li>_ Tên đầy đủ: Công Ty Cổ Phần Công Nghệ Thông Tin Truyền Thông Thiên Hy Long Việt Nam (CHICILON MEDIA). </li>
+                                <li>_ Địa chỉ: Tầng 17, Tòa nhà Vietcombank, Số 5 Công Trường Mê Linh, P. Sài Gòn, TP. Hồ Chí Minh, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            <!-- Road map -->
+        <section class=" tf-section tf-partner-sec section-body-x7 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="background-gradient-4"></div>
+            <div class="tf-container">
+                <div class="row">   
+                    <div class="col-md-12 ">
+                        <div class="centered-title mb60 ">
+                            <h2 class="heading"><span>MATIS_ART</span> PARTNER</h2>
+                            <p class="sub-heading">Xin gửi lời cảm ơn chân thành đến Quý khách hàng và đối tác. Sự tín nhiệm và trao cơ hội của quý vị đã đóng góp quan trọng vào quá trình hình thành và phát triển của chúng tôi ngày hôm nay!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="swiper-container partner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-1.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-2.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-3.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-4.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-5.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-6.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="swiper-container partner-2 style-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-7.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-8.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-9.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-10.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-11.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-12.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-12 ">
+                        <div class="swiper-container partner ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-13.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-14.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-15.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-16.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-17.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-item">
+                                        <div class="tf-partner">
+                                            <img src="assets/images/partner/partner-18.png" alt="Image">
+                                        </div>
+                                    </div><!-- item-->
+                                </div>
+                            </div>
+                        </div> 
+                    </div>                  
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="action-box">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action-box-inner">
+                                <h2 class="title">THAM GIA CỘNG ĐỒNG CỦA CHÚNG TÔI</h2>
+                                <p class="content">Cùng giao lưu, kết bạn, tìm kiếm cơ hội tuyển dụng và chia sẻ những tài nguyên giá trị.</p>
+                                <div class="group-btn">
+                                    <a href="comming-soon.html" class="tf-button rounded-buton connect" target="_blank"><i class="icon-facebook"></i><span>FANPAGE</span></a>
+                                    <a href="comming-soon.html" class="tf-button rounded-buton zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO GROUP</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="widget widget-infor">
+                                <div class="logo">
+                                    <img id="logo_footer" src="assets/images/logo/logo-footer.png" alt="Image">
+                                </div>
+                                <p class="content">Cảm ơn bạn đã dành một chút thời gian quý giá để ghé thăm nơi này!</p>
+                                <p class="contact_2">Thông tin liên hệ:</p>
+                                <div class="widget contact_2">
+                                    <div class="menu">
+                                        <ul >
+                                            <li><p class="contact_2">Hotline: <a href="tel:0862132907">0862132907</a></p></li>
+                                            <li><p class="contact_2">Email: <a href="mailto:phuctaingovn@gmail.com">phuctaingovn@gmail.com</a></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <div class="widget widget-menu">
+                                <div class="menu menu-1">
+                                    <h6 class="widget-title">THÔNG TIN</h6>
+                                    <ul >
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about1.html">Giới thiệu</a></li>
+                                        <li><a href="roadmap-1.html">Portfolio</a></li>
+                                        <li><a href="team.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu menu-2">
+                                    <h6 class="widget-title">S.TIN TỨC</h6>
+                                    <ul >
+                                        <li><a href="about2.html">News</a></li>
+                                        <li><a href="roadmap-2.html">Showcase</a></li>
+                                        <li><a href="testimonial.html">Font free</a></li>
+                                        <li><a href="item-detail.html">Resouces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="widget widget-subcribe">
+                                <h6 class="widget-title">ĐỂ LẠI EMAIL NẾU BẠN CẦN HỖ TRỢ</h6>
+                                <form action="#" id="subscribe-form">
+                                    <input type="email" placeholder="Email của bạn" required="" id="subscribe-email">
+                                    <button class="tf-button" type="submit" id="subscribe-button">GỬI</button>
+                                </form>
+                                <div class="img2">
+                                    <img src="assets/images/iconcarrotxanh/camera-01.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <div class="copy-right col-base col-md-6">
+                                    <div class="widget contact_2">
+                                        <div class="menu">
+                                            <ul >
+                                                <li><p class="contact_2">@ 2023. All rights reserved. With Energy and Love from <a href="https://www.facebook.com/phuctai2907">❤ Phúc tài.</a></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="social-item ">
+                                    <li><a href="https://www.facebook.com/phuctai2907"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/84862132907"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@phuctaingovn"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/phuctaingovn/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://discord.gg/"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Bottom -->
+    <a id="scroll-top"></a>
+    <!-- Cursor Effect Elements -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery2.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/textanimation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/switchmode.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/shortcodes.js"></script>
+    <script src="assets/js/mycode.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/bootstrap2.min.js"></script>
+    <script src="assets/js/interface.js"></script>
+    <script src="assets/css/Magnificpopup.css"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
+</body>
+
+</html>

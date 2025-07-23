@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>CARROT_XANH | Photography</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animationtest.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+
+    <!-- Trường thông tin liên hệ (sau này sẽ cần xóa đi để bảo mật thông tin)  -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script>
+        (function () {
+        emailjs.init("mv4YHMqYeaoRg87fk"); // Public Key của bạn
+        })();
+    </script>
+    <!-- end  -->
+</head>
+
+<body class="body header-fixed team-page">
+
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper" class="wrapper-style">
+        <div id="page" class="clearfix">
+            <header class="header">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner">                                 
+                                <div id="site-logo" class="clearfix">
+                                    <div id="site-logo-inner">
+                                        <a href="index.html" rel="home" class="main-logo">
+                                            <img id="logo_header" src="assets/images/logo/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-center">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item">
+                                                <a href="index.html">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="Introduce.html">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                                <a href="portfolio.html">PORTFOLIO</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="publications.html">Ấn phẩm truyền thông</a></li>
+                                                    <li class="menu-item"><a href="packaging.html">Thiết kế bao bì</a></li>
+                                                    <li class="menu-item"><a href="painting.html">Digital painting</a></li>
+                                                    <li class="menu-item"><a href="social.html">Truyền thông xã hội</a></li>
+                                                    <li class="menu-item"><a href="photography.html">Nhiếp ảnh</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Video/Motion</a></li>
+                                                    <li class="menu-item"><a href="brandidentity.html">Nhận diện thương hiệu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="blog.html">S.TIN TỨC</a>                                        
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html">LIÊN HỆ</a>                                        
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                </div>
+                                <div class="header-right">
+                                    <a href="#" onclick="switchTheme()" class="mode-switch"><img id="img-mode" src="assets/images/icon/sun.png" alt="Image"></a>
+                                    <a href="https://zalo.me/0862132907" class="tf-button rounded-ends zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO</span></a>
+                                    <a href="https://www.facebook.com/phuctai2907" class="tf-button rounded-ends connect" target="_blank"><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+                                </div>
+                                <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="tf-page-title">    
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title-heading">PHOTOGRAPHY</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                <li>PHOTOGRAPHY</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+            <!-- Main -->
+
+            <section class="portfolio-wrapper">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio-area portfolio-default-area">
+
+                                <div class="container-fluid">
+                                    <div class="content-wrapper">
+                                        <h6>MỘT SỐ SHOT CHỤP TRONG CÁC BỘ ẢNH</h6>
+                                        <div class="line2">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bootstrap-apply">
+                                    <div class="container-fluid">
+                                        <div class="row row-cols-xl-4 portfolio-list">
+                                            
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/1.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/1.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Phong cảnh - Thành phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/2.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/2.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Phong cảnh - Kiến trúc</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/3.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/3.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Phong cảnh - Kiến trúc</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/4.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/4.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Phong cảnh - Thành phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/5.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/5.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Macro - Cận cảnh</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/6.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/6.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Caffe - decorate</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/7.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/7.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Street - đường phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/8.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/8.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Phong cảnh - Thiên nhiên</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/9.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/9.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Caffe - decorate</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/10.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/10.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Typography</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/11.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/11.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Typography</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/12.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/12.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Typography</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/13.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/13.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Street - đường phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/14.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/14.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Street - đường phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/15.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/15.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/16.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/16.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/17.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/17.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Street - đường phố</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/18.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/18.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/19.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/19.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/20.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/20.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/22.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/22.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/21.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/21.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/23.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/23.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/24.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/24.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/25.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/25.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/26.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/26.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/27.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/27.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="single-portfolio">
+                                                        <div class="thumbnail">
+                                                            <a href="assets/images/portfolio/photography/28.jpg" class="gallery-popup">
+                                                                <img class="rounded-corners" src="assets/images/portfolio/photography/28.jpg" alt="portfolio">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p class="desc">Model photo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="resizer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-inner">
+                    <hr class="post-divider">
+                        <ul class="post-navigator updated-navigator">
+                        <!-- Prev Button -->
+                            <li class="nav-item">
+                                <div class="thump">
+                                    <a href="social.html">
+                                        <img src="assets/images/portfolio/social-bt.jpg" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <a href="social" class="btn-post btn-prev">DANH MỤC TRƯỚC</a>
+                                    <h6 class="title"><a href="social.html">SOCIAL POST</a></h6>
+                                </div>
+                            </li>
+
+                        <!-- Home Icon Button -->
+                            <li class="nav-item home-icon">
+                                <a href="portfolio.html" class="home-btn" title="Về trang chủ">
+                                    <img src="assets/icon/portfolio-bt.svg" alt="Home">
+                                </a>
+                            </li>
+
+                        <!-- Next Button -->
+                            <li class="nav-item">
+                                <div class="thump">
+                                    <a href="videomotion.html">
+                                        <img src="assets/images/portfolio/video-bt.jpg" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <a href="videomotion.html" class="btn-post btn-next">DANH MỤC SAU</a>
+                                    <h6 class="title"><a href="videomotion.html">VIDEO/MOTION</a></h6>
+                                </div>
+                            </li>
+                        </ul>
+                    <hr class="post-divider">
+                </div>
+            </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="action-box">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action-box-inner">
+                                <h2 class="title">THAM GIA CỘNG ĐỒNG CỦA CHÚNG TÔI</h2>
+                                <p class="content">Cùng giao lưu, kết bạn, tìm kiếm cơ hội tuyển dụng và chia sẻ những tài nguyên giá trị.</p>
+                                <div class="group-btn">
+                                    <a href="comming-soon.html" class="tf-button rounded-buton connect" target="_blank"><i class="icon-facebook"></i><span>FANPAGE</span></a>
+                                    <a href="comming-soon.html" class="tf-button rounded-buton zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO GROUP</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="widget widget-infor">
+                                <div class="logo">
+                                    <img id="logo_footer" src="assets/images/logo/logo-footer.png" alt="Image">
+                                </div>
+                                <p class="content">Cảm ơn bạn đã dành một chút thời gian quý giá để ghé thăm nơi này!</p>
+                                <p class="contact_2">Thông tin liên hệ:</p>
+                                <div class="widget contact_2">
+                                    <div class="menu">
+                                        <ul >
+                                            <li><p class="contact_2">Hotline: <a href="tel:0862132907">0862132907</a></p></li>
+                                            <li><p class="contact_2">Email: <a href="mailto:phuctaingovn@gmail.com">phuctaingovn@gmail.com</a></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <div class="widget widget-menu">
+                                <div class="menu menu-1">
+                                    <h6 class="widget-title">THÔNG TIN</h6>
+                                    <ul >
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about1.html">Giới thiệu</a></li>
+                                        <li><a href="roadmap-1.html">Portfolio</a></li>
+                                        <li><a href="team.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu menu-2">
+                                    <h6 class="widget-title">S.TIN TỨC</h6>
+                                    <ul >
+                                        <li><a href="about2.html">News</a></li>
+                                        <li><a href="roadmap-2.html">Showcase</a></li>
+                                        <li><a href="testimonial.html">Font free</a></li>
+                                        <li><a href="item-detail.html">Resouces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="widget widget-subcribe">
+                                <h6 class="widget-title">ĐỂ LẠI EMAIL NẾU BẠN CẦN HỖ TRỢ</h6>
+                                <form id="subscribe-form" onsubmit="sendSubscribeEmail(event)">
+                                    <input type="email" placeholder="Email của bạn" required="" id="subscribe-email" name="reply_to" required>
+                                    <fieldset style="display:none;"><input type="text" name="send_date" id="subscribe-date"></fieldset>
+                                    <button class="tf-button" type="submit" id="subscribe-button">GỬI</button>
+                                </form>
+                                <div class="img2">
+                                    <img src="assets/images/iconcarrotxanh/camera.svg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <div class="copy-right col-base col-md-6">
+                                    <div class="widget contact_2">
+                                        <div class="menu">
+                                            <ul >
+                                                <li><p class="contact_2">@ 2023. All rights reserved. With Energy and Love from <a href="https://www.facebook.com/phuctai2907">❤ Phúc tài.</a></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="social-item ">
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="icon-fl-tik-tok-2"></i></a></li>
+                                    <li><a href="#"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Bottom -->
+<a id="scroll-top"></a>
+<!-- Cursor Effect Elements -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+<!-- Javascript test -->
+
+    <!-- Javascript -->
+
+    <link href="assets/css/bootstrap-portfolio.css" rel="stylesheet" />
+    <script src="assets/js/jquery-main-pf.js"></script>
+    <script src="assets/js/jquery-migrate-pf.js"></script>
+    <script src="assets/js/plugincollection-pf.js"></script>
+    <script src="assets/js/custom-pf.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/textanimation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/switchmode.js"></script>
+    <script src="assets/js/countto.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/shortcodes.js"></script>
+    <script src="assets/js/mycode.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/bootstrap2.min.js"></script>
+    <script src="assets/js/interface.js"></script>
+    <link rel="stylesheet" href="assets/css/Magnificpopup.css" />
+    <script src="assets/js/Magnific-popup.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>

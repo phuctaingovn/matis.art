@@ -1,0 +1,121 @@
+/* JT Marnie - Các biến thể bình thường */
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-Thin.woff2') format('woff2'),
+       url('../font/JTMarnie-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-Light.woff2') format('woff2'),
+       url('../font/JTMarnie-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-Regular.woff2') format('woff2'),
+       url('../font/JTMarnie-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-Medium.woff2') format('woff2'),
+       url('../font/JTMarnie-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-Bold.woff2') format('woff2'),
+       url('../font/JTMarnie-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-ExtraBold.woff2') format('woff2'),
+       url('../font/JTMarnie-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* JT Marnie - Các biến thể nghiêng */
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-ThinItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-LightItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-RegularItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-MediumItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-BoldItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JT Marnie';
+  src: url('../font/JTMarnie-ExtraBoldItalic.woff2') format('woff2'),
+       url('../font/JTMarnie-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* Class dùng để gọi chung */
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-jtmarnie {
+  font-family: 'JT Marnie', sans-serif;
+}
